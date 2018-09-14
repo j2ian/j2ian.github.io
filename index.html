@@ -405,6 +405,155 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/14/Slim3筆記(1)安裝/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="J2ian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小簡筆記">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/14/Slim3筆記(1)安裝/" itemprop="url">Slim 3筆記(1)安裝</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-09-14T19:07:16+08:00">
+                2018-09-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/09/14/Slim3筆記(1)安裝/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/09/14/Slim3筆記(1)安裝/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="為什麼要使用Slim-3"><a href="#為什麼要使用Slim-3" class="headerlink" title="為什麼要使用Slim 3"></a>為什麼要使用Slim 3</h1><h2 id="優點"><a href="#優點" class="headerlink" title="優點"></a>優點</h2><ul>
+<li>和Laravel比較檔案較小</li>
+<li>對主機要求較低，一般shared hosting也可以使用</li>
+<li>模板可使用twig，也支援Eloquent</li>
+<li>較簡約</li>
+</ul>
+<h2 id="缺點"><a href="#缺點" class="headerlink" title="缺點"></a>缺點</h2><ul>
+<li>須有一定php基礎</li>
+<li>不像Laravel那樣能夠快速上手</li>
+</ul>
+<h1 id="簡單開始"><a href="#簡單開始" class="headerlink" title="簡單開始"></a>簡單開始</h1><h2 id="使用-composer安裝"><a href="#使用-composer安裝" class="headerlink" title="使用 composer安裝"></a>使用 composer安裝</h2><pre><code>composer require slim/slim &quot;^3.0&quot;
+</code></pre><h2 id="建立-public-index-php"><a href="#建立-public-index-php" class="headerlink" title="建立/public/index.php"></a>建立/public/index.php</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">require</span> <span class="keyword">__DIR__</span> . <span class="string">'/../bootstrap/app.php'</span>;</span><br><span class="line">$app-&gt;run();</span><br></pre></td></tr></table></figure>
+<h2 id="建立-bootstrap-app-php"><a href="#建立-bootstrap-app-php" class="headerlink" title="建立/bootstrap/app.php"></a>建立/bootstrap/app.php</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">session_start();</span><br><span class="line"><span class="keyword">require</span> <span class="keyword">__DIR__</span> . <span class="string">'/../vendor/autoload.php'</span>;</span><br><span class="line">$app = <span class="keyword">new</span> \Slim\App([</span><br><span class="line">    <span class="string">'settings'</span> =&gt; [</span><br><span class="line">        <span class="string">'displayErrorDetails'</span> =&gt; <span class="keyword">true</span>, <span class="comment">//顯示錯誤</span></span><br><span class="line">    ],</span><br><span class="line">]);</span><br><span class="line"><span class="keyword">require</span> <span class="keyword">__DIR__</span> . <span class="string">'/../app/routes.php'</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="建立-app-routes-php"><a href="#建立-app-routes-php" class="headerlink" title="建立 /app/routes.php"></a>建立 /app/routes.php</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$app-&gt;get(<span class="string">'/'</span>, <span class="function"><span class="keyword">function</span> <span class="params">($request, $response)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Hello world"</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="建立-public-htaccess"><a href="#建立-public-htaccess" class="headerlink" title="建立 public/.htaccess"></a>建立 public/.htaccess</h2><pre><code>RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+</code></pre><h2 id="開啟網頁"><a href="#開啟網頁" class="headerlink" title="開啟網頁"></a>開啟網頁</h2><p><a href="http://localhost/YourAppName/public" target="_blank" rel="noopener">http://localhost/YourAppName/public</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/14/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -577,7 +726,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">文章</span>
                 </a>
               </div>
@@ -590,7 +739,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">標籤</span>
                 </a>
               </div>
