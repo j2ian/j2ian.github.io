@@ -3,6 +3,25 @@
   
     
     <entry>
+      <title>No-IP+dd-wrt++XAMPP架站</title>
+      <link href="/2018/09/15/No-IP-dd-wrt-XAMPP%E6%9E%B6%E7%AB%99/"/>
+      <url>/2018/09/15/No-IP-dd-wrt-XAMPP%E6%9E%B6%E7%AB%99/</url>
+      <content type="html"><![CDATA[<h1 id="環境與工具"><a href="#環境與工具" class="headerlink" title="環境與工具"></a>環境與工具</h1><ul><li><a href="https://www.noip.com/" target="_blank" rel="noopener">NO-IP服務</a></li><li>XAMPP</li><li>TP-LINK wifi分享器改dd-wrt</li></ul><h1 id="開始"><a href="#開始" class="headerlink" title="開始"></a>開始</h1><h2 id="NO-IP設定"><a href="#NO-IP設定" class="headerlink" title="NO-IP設定"></a>NO-IP設定</h2><ul><li>申請帳號<br><a href="https://www.noip.com/sign-up" target="_blank" rel="noopener">https://www.noip.com/sign-up</a></li><li>登入</li><li>新增網址</li><li>下載並安裝DUC<br><a href="https://www.noip.com/download?page=win" target="_blank" rel="noopener">載點</a></li><li>開啟後登入</li><li>選擇剛剛新增的網址</li><li>確認狀態<br>三個綠色打勾代表正常<h2 id="XAMPP"><a href="#XAMPP" class="headerlink" title="XAMPP"></a>XAMPP</h2><h3 id="確認PORT"><a href="#確認PORT" class="headerlink" title="確認PORT"></a>確認PORT</h3><h2 id="dd-wrt設定"><a href="#dd-wrt設定" class="headerlink" title="dd-wrt設定"></a>dd-wrt設定</h2></li><li>ipconfig確認ip</li><li>開啟wifi設定(192.168.1.1)</li><li>DDNS設定</li><li>Port Forwarding</li><li>DMZ</li></ul><h1 id="測試"><a href="#測試" class="headerlink" title="測試"></a>測試</h1><p>ping<br>  </p><h1 id="後記"><a href="#後記" class="headerlink" title="後記"></a>後記</h1><p>純粹記步驟，稍有缺漏就會很麻煩。</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> XAMPP </tag>
+            
+            <tag> DNS </tag>
+            
+            <tag> 架站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Slim 3筆記(1)安裝</title>
       <link href="/2018/09/14/Slim3%E7%AD%86%E8%A8%98(1)%E5%AE%89%E8%A3%9D/"/>
       <url>/2018/09/14/Slim3%E7%AD%86%E8%A8%98(1)%E5%AE%89%E8%A3%9D/</url>
