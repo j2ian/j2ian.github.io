@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="php,framework,slim3," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="在新手村熬成村長">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小簡筆記">
-<meta property="og:url" content="http://yoursite.com/tags/XAMPP/index.html">
+<meta name="description" content="#前言 Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。 #我的目錄結構 . ├── app/ │   └── Controllers/ │   └── Models/ │   └──">
+<meta name="keywords" content="php,framework,slim3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Slim3 實作：自訂目錄結構">
+<meta property="og:url" content="http://yoursite.com/2018/09/21/Slim3 實作-自訂目錄結構/index.html">
 <meta property="og:site_name" content="小簡筆記">
-<meta property="og:description" content="在新手村熬成村長">
+<meta property="og:description" content="#前言 Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。 #我的目錄結構 . ├── app/ │   └── Controllers/ │   └── Models/ │   └──">
 <meta property="og:locale" content="zh-tw">
+<meta property="og:updated_time" content="2018-09-21T01:07:52.602Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小簡筆記">
-<meta name="twitter:description" content="在新手村熬成村長">
+<meta name="twitter:title" content="Slim3 實作：自訂目錄結構">
+<meta name="twitter:description" content="#前言 Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。 #我的目錄結構 . ├── app/ │   └── Controllers/ │   └── Models/ │   └──">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/XAMPP/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/21/Slim3 實作-自訂目錄結構/"/>
 
 
 
 
 
-  <title>標籤: XAMPP | 小簡筆記</title>
+  <title>Slim3 實作：自訂目錄結構 | 小簡筆記</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -261,54 +263,203 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>XAMPP<small>標籤</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/21/Slim3 實作-自訂目錄結構/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="J2ian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小簡筆記">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/09/15/No-IP-dd-wrt-XAMPP架站/" itemprop="url">
-              
-                <span itemprop="name">No-IP+dd-wrt+XAMPP架站</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Slim3 實作：自訂目錄結構</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-15T19:33:33+08:00"
-              content="2018-09-15" >
-          09-15
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2018-09-21T09:07:16+08:00">
+                2018-09-21
+              </time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新於&#58;</span>
+              
+              <time title="更新於" itemprop="dateModified" datetime="2018-09-21T09:07:52+08:00">
+                2018-09-21
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/09/21/Slim3 實作-自訂目錄結構/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/09/21/Slim3 實作-自訂目錄結構/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/09/21/Slim3 實作-自訂目錄結構/" class="leancloud_visitors" data-flag-title="Slim3 實作：自訂目錄結構">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">閱讀次數&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        <p>#前言</p>
+<p>Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。</p>
+<p>#我的目錄結構</p>
+<pre><code>.
+├── app/
+│   └── Controllers/
+│   └── Models/
+│   └── routes.php
+├── bootstrap/
+│   └── app.php
+├── public/             
+│   └── .htaccess       Apache redirect rules for the front controller
+│   └── index.php       
+├── resources/
+│   └── views
+│       └── home.twig
+├── vendor/             
+├── composer.json       
+└──  .htaccess          Internal redirect to the public/ directory
+</code></pre>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/php/" rel="tag"># php</a>
+          
+            <a href="/tags/framework/" rel="tag"># framework</a>
+          
+            <a href="/tags/slim3/" rel="tag"># slim3</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/15/No-IP-dd-wrt-XAMPP架站/" rel="next" title="No-IP+dd-wrt+XAMPP架站">
+                <i class="fa fa-chevron-left"></i> No-IP+dd-wrt+XAMPP架站
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -316,6 +467,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -528,6 +693,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -545,6 +714,18 @@
       <script id="dsq-count-scr" src="https://xiao-jian-bi-ji.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2018/09/21/Slim3 實作-自訂目錄結構/';
+          this.page.identifier = '2018/09/21/Slim3 實作-自訂目錄結構/';
+          this.page.title = 'Slim3 實作：自訂目錄結構';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://xiao-jian-bi-ji.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
