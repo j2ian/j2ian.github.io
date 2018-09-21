@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="#前言 Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。 #我的目錄結構 . ├── app/ │   └── Controllers/ │   └── Models/ │   └──">
+<meta name="description" content="前言Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。">
 <meta name="keywords" content="php,framework,slim3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Slim3 實作：自訂目錄結構">
 <meta property="og:url" content="http://yoursite.com/2018/09/21/Slim3 實作-自訂目錄結構/index.html">
 <meta property="og:site_name" content="小簡筆記">
-<meta property="og:description" content="#前言 Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。 #我的目錄結構 . ├── app/ │   └── Controllers/ │   └── Models/ │   └──">
+<meta property="og:description" content="前言Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2018-09-21T01:07:52.602Z">
+<meta property="og:updated_time" content="2018-09-21T01:09:41.025Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Slim3 實作：自訂目錄結構">
-<meta name="twitter:description" content="#前言 Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。 #我的目錄結構 . ├── app/ │   └── Controllers/ │   └── Models/ │   └──">
+<meta name="twitter:description" content="前言Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。">
 
 
 
@@ -322,7 +322,7 @@
               
                 <span class="post-meta-item-text">更新於&#58;</span>
               
-              <time title="更新於" itemprop="dateModified" datetime="2018-09-21T09:07:52+08:00">
+              <time title="更新於" itemprop="dateModified" datetime="2018-09-21T09:09:41+08:00">
                 2018-09-21
               </time>
             
@@ -378,10 +378,8 @@
       
 
       
-        <p>#前言</p>
-<p>Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。</p>
-<p>#我的目錄結構</p>
-<pre><code>.
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。<br><a id="more"></a></p>
+<h1 id="我的目錄結構"><a href="#我的目錄結構" class="headerlink" title="我的目錄結構"></a>我的目錄結構</h1><pre><code>.
 ├── app/
 │   └── Controllers/
 │   └── Models/
@@ -501,8 +499,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概覽
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -553,6 +560,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我的目錄結構"><span class="nav-number">2.</span> <span class="nav-text">我的目錄結構</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

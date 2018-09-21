@@ -6,7 +6,7 @@
       <title>Slim3 實作：自訂目錄結構</title>
       <link href="/2018/09/21/Slim3%20%E5%AF%A6%E4%BD%9C-%E8%87%AA%E8%A8%82%E7%9B%AE%E9%8C%84%E7%B5%90%E6%A7%8B/"/>
       <url>/2018/09/21/Slim3%20%E5%AF%A6%E4%BD%9C-%E8%87%AA%E8%A8%82%E7%9B%AE%E9%8C%84%E7%B5%90%E6%A7%8B/</url>
-      <content type="html"><![CDATA[<p>#前言</p><p>Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。</p><p>#我的目錄結構</p><pre><code>.├── app/│   └── Controllers/│   └── Models/│   └── routes.php├── bootstrap/│   └── app.php├── public/             │   └── .htaccess       Apache redirect rules for the front controller│   └── index.php       ├── resources/│   └── views│       └── home.twig├── vendor/             ├── composer.json       └──  .htaccess          Internal redirect to the public/ directory</code></pre>]]></content>
+      <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Slim 3是一個微框架，它並不像是Laravel一樣，在安裝之後就生成所有目錄，實際上如果是使用composer安裝的話，應該只會得到Vender資料夾，如果要使用Slim3製作網站，又不知道從何開始，可大致參考Laravel的目錄結構，再依照自己的習慣修改。<br><a id="more"></a></p><h1 id="我的目錄結構"><a href="#我的目錄結構" class="headerlink" title="我的目錄結構"></a>我的目錄結構</h1><pre><code>.├── app/│   └── Controllers/│   └── Models/│   └── routes.php├── bootstrap/│   └── app.php├── public/             │   └── .htaccess       Apache redirect rules for the front controller│   └── index.php       ├── resources/│   └── views│       └── home.twig├── vendor/             ├── composer.json       └──  .htaccess          Internal redirect to the public/ directory</code></pre>]]></content>
       
       
         <tags>
